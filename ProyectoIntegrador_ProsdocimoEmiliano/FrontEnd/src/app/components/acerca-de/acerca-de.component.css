@@ -4,6 +4,7 @@
 div{
     background-color: #a1b5cb;
     text-align: center;
+    font-family: sans-serif;
 }
 
 /*Estilo de la foto de perfil */
@@ -33,6 +34,7 @@ div{
 
 /*etiqueta nombre*/
 #nombre{
+    font-family: sans-serif;
     font-weight: bold;
     margin-top: 30%;
 }

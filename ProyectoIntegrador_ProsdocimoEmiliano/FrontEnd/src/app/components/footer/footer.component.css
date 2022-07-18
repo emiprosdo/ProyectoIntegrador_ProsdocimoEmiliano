@@ -1,9 +1,10 @@
 .row{
-    background-color: #a1b5cb;
+    background-color: #00358e;
 }
 footer{
-    color: #fefefe;
+    color: hsl(0, 0%, 100%);
     font-size: 14px;
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
