@@ -14,8 +14,7 @@ public class NuevoUsuario {
     private String password;
     private Set<String> roles = new HashSet<>();
     
-    
-    //Getter and Setter
+    //Gettes & Setters
 
     public String getNombre() {
         return nombre;

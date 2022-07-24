@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "http://localhost:4200")
 public class PersonaController {
     @Autowired IPersonaService ipersonaService;
-   
-    @GetMapping("/personas/traer")
+    
+    @GetMapping("personas/traer")
     public List<Persona> getPersona(){
         return ipersonaService.getPersona();
     }
@@ -45,19 +45,19 @@ public class PersonaController {
                                @RequestParam("nombre") String nuevoNombre,
                                @RequestParam("apellido") String nuevoApellido,
                                @RequestParam("img") String nuevoImg){
-    Persona persona = ipersonaService.findPersona(id);
-    
-    persona.setNombre(nuevoNombre);
-    persona.setApellido(nuevoApellido);
-    persona.setImg(nuevoImg);
-       
-    ipersonaService.savePersona(persona);
-    return persona;
-    
+        Persona persona = ipersonaService.findPersona(id);
+        
+        persona.setNombre(nuevoNombre);
+        persona.setApellido(nuevoApellido);
+        persona.setImg(nuevoImg);
+        
+        ipersonaService.savePersona(persona);
+        return persona;
     }
     
-    @GetMapping("/personas/traer/perfil")
+    @GetMapping("personas/traer/perfil")
     public Persona findPersona(){
         return ipersonaService.findPersona((long)1);
     }
+   
 }

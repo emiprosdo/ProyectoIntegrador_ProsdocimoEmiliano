@@ -6,14 +6,13 @@ package com.portfolioemilianoprosdocimo.ep.Security.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-
 public class LoginUsuario {
     @NotBlank
     private String nombreUsuario;
     @NotBlank
     private String password;
     
-    //Getter and Setter
+    //Getter & Setter
 
     public String getNombreUsuario() {
         return nombreUsuario;
@@ -31,5 +30,4 @@ public class LoginUsuario {
         this.password = password;
     }
     
-   
 }

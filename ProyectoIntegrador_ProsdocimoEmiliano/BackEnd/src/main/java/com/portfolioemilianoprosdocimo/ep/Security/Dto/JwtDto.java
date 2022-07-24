@@ -25,8 +25,7 @@ public class JwtDto {
         this.authorities = authorities;
     }
     
-    
-    //Getter and Setter
+    //Getters and Setters
 
     public String getToken() {
         return token;

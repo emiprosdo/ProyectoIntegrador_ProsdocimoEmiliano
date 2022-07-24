@@ -6,24 +6,22 @@ package com.portfolioemilianoprosdocimo.ep.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-
 public class dtoExperiencia {
     @NotBlank
     private String nombreE;
     @NotBlank
     private String descripcionE;
     
-    
     //Constructores
-    public dtoExperiencia(){
+
+    public dtoExperiencia() {
     }
 
     public dtoExperiencia(String nombreE, String descripcionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
-
-    //Getters and Setters
+    //Getters & Setters
 
     public String getNombreE() {
         return nombreE;
